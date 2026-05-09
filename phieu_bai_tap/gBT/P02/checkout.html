@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đặt hàng</title>
+
+    <style>
+        body { color: #333; }
+        h2   { color: #2255aa; }
+        output { color: #cc0000; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Xác nhận đặt hàng</h1>
+    <!--PHẦN 1: GIỎ HÀNG-->
+    <h2>Giỏ hàng</h2>
+
+    <!-- datalist: gõ vào ô thì trình duyệt gợi ý các option bên dưới -->
+    <label for="tim-sp">Thêm sản phẩm:</label><br>
+    <input type="text" id="tim-sp" list="ds-san-pham" placeholder="Tên sản phẩm...">
+    <datalist id="ds-san-pham">
+        <option value="Áo thun trắng">
+        <option value="Áo thun đen">
+        <option value="Quần jean xanh">
+        <option value="Quần kaki nâu">
+        <option value="Giày thể thao trắng">
+        <option value="Mũ lưỡi trai">
+    </datalist>
+
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Áo thun trắng cổ tròn</td>
+                <td>150.000đ</td>
+                <td>2</td>
+                <td>300.000đ</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Quần jean xanh dáng thẳng</td>
+                <td>450.000đ</td>
+                <td>1</td>
+                <td>450.000đ</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Giày thể thao trắng</td>
+                <td>680.000đ</td>
+                <td>1</td>
+                <td>680.000đ</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><strong>Tổng cộng</strong></td>
+                <td><strong>1.430.000đ</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Số tiền cần thanh toán:</p>
+    <output>1.430.000đ</output>
+
+    <br><br>
+
+    <form action="#" method="POST">
+
+        <!-- PHẦN 2: THANH TOÁN-->
+        <h2>Thanh toán</h2>
+
+        <label>Phương thức thanh toán *</label><br>
+
+        <input type="radio" id="cod" name="thanh_toan" value="cod" required>
+        <label for="cod">Thanh toán khi nhận hàng (COD)</label>
+        &nbsp;&nbsp;
+        <input type="radio" id="chuyen-khoan" name="thanh_toan" value="chuyen_khoan">
+        <label for="chuyen-khoan">Chuyển khoản</label>
+        &nbsp;&nbsp;
+        <input type="radio" id="vi-dien-tu" name="thanh_toan" value="vi_dien_tu">
+        <label for="vi-dien-tu">Ví điện tử</label>
+
+        <br><br>
+
+        <label for="ma-giam-gia">Mã giảm giá:</label><br>
+        <input type="text" id="ma-giam-gia" name="ma_giam_gia"
+               placeholder="Ví dụ: SALE2026" pattern="SALE[0-9]{4}"><br>
+        <small>Định dạng: SALE + 4 chữ số (ví dụ: SALE2026)</small>
+
+        <br><br>
+
+        <label for="ghi-chu">Ghi chú:</label><br>
+        <textarea id="ghi-chu" name="ghi_chu" rows="3" cols="50"
+                  placeholder="Giao giờ hành chính, gọi trước khi giao..."></textarea>
+
+        <br><br>
+
+        <!-- PHẦN 3: THÔNG TIN GIAO HÀNG-->
+        <fieldset>
+            <legend><strong>Thông tin giao hàng</strong></legend>
+
+            <label for="ho-ten">Họ và tên *</label><br>
+            <input type="text" id="ho-ten" name="ho_ten"
+                   placeholder="Nguyễn Văn An"
+                   required minlength="2" maxlength="50"><br><br>
+
+            <label for="dien-thoai">Số điện thoại *</label><br>
+            <input type="tel" id="dien-thoai" name="dien_thoai"
+                   placeholder="0912345678"
+                   required pattern="[0-9]{10}"><br><br>
+
+            <label for="thanh-pho">Tỉnh / Thành phố *</label><br>
+            <select id="thanh-pho" name="thanh_pho" required>
+                <option value="">-- Chọn tỉnh/thành phố --</option>
+                <option value="hn">Hà Nội</option>
+                <option value="hcm">TP. Hồ Chí Minh</option>
+                <option value="dn">Đà Nẵng</option>
+                <option value="hp">Hải Phòng</option>
+                <option value="ct">Cần Thơ</option>
+            </select><br><br>
+
+            <label for="quan-huyen">Quận / Huyện</label><br>
+            <select id="quan-huyen" name="quan_huyen">
+                <option value="">-- Chọn quận/huyện --</option>
+                <option value="hk">Hoàn Kiếm</option>
+                <option value="dd">Đống Đa</option>
+                <option value="cf">Cầu Giấy</option>
+                <option value="hbt">Hai Bà Trưng</option>
+                <option value="hm">Hoàng Mai</option>
+            </select><br><br>
+
+            <label for="dia-chi">Địa chỉ chi tiết *</label><br>
+            <textarea id="dia-chi" name="dia_chi" rows="3" cols="50"
+                      placeholder="Số nhà, tên đường, phường..."
+                      required></textarea><br><br>
+
+            <label>Giới tính:</label><br>
+            <input type="radio" id="nam" name="gioi_tinh" value="nam">
+            <label for="nam">Nam</label>
+            &nbsp;&nbsp;
+            <input type="radio" id="nu" name="gioi_tinh" value="nu">
+            <label for="nu">Nữ</label>
+            &nbsp;&nbsp;
+            <input type="radio" id="khac" name="gioi_tinh" value="khac">
+            <label for="khac">Khác</label>
+
+            <br><br>
+
+            <label for="ngay-giao">Ngày giao hàng mong muốn:</label><br>
+            <input type="date" id="ngay-giao" name="ngay_giao" min="2026-04-30"><br>
+            <small>Chỉ chọn từ ngày mai trở đi</small>
+
+            <br><br>
+
+            <label for="khung-gio">Khung giờ nhận hàng:</label><br>
+            <select id="khung-gio" name="khung_gio">
+                <option value="">-- Chọn --</option>
+                <option value="sang">Sáng (8h - 12h)</option>
+                <option value="chieu">Chiều (14h - 18h)</option>
+                <option value="toi">Tối (18h - 21h)</option>
+            </select><br><br>
+
+            <label for="so-ngay">Thời gian giao hàng dự kiến (ngày):</label><br>
+            <input type="range" id="so-ngay" name="so_ngay"
+                   min="1" max="7" step="1" value="3"><br>
+            <small>Kéo để chọn từ 1 đến 7 ngày</small>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit" aria-label="Xác nhận đặt hàng">Xác nhận đặt hàng</button>
+
+    </form>
+
+</body>
+</html>

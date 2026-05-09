@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu sản phẩm</title>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- LOGO: thay SVG bằng ảnh -->
+    <!-- SVG LOGO INLINE -->
+    <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Hình tròn -->
+        <circle cx="40" cy="40" r="40" fill="#2255aa" />
+
+        <!-- Chữ S -->
+        <text
+            x="40" y="40"
+            text-anchor="middle"
+            dominant-baseline="central"
+            fill="white"
+            font-size="36"
+            font-family="Arial"
+            font-weight="bold"
+        >TLU</text>
+
+    </svg>
+
+    <h1>ShopVN — Giới thiệu sản phẩm</h1>
+    <p>Khám phá bộ sưu tập mới nhất của chúng tôi</p>
+
+    <!-- PHẦN 1: ẢNH SẢN PHẨM -->
+    <div class="section">
+        <h2>Hình ảnh sản phẩm</h2>
+
+        <div class="danh-sach-anh">
+
+            <figure>
+                <img
+                    src="img/ip16.png"
+                    alt="iPhone 16 Pro màu titan"
+                    loading="lazy"
+                    style="max-width: 100%; height: auto;"
+                >
+                <figcaption>iPhone 16 Pro</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="img/ipad.png"
+                    alt="iPad màn hình lớn"
+                    loading="lazy"
+                    style="max-width: 100%; height: auto;"
+                >
+                <figcaption>iPad</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="img/mac.png"
+                    alt="MacBook thiết kế mỏng nhẹ"
+                    loading="lazy"
+                    style="max-width: 100%; height: auto;"
+                >
+                <figcaption>MacBook</figcaption>
+            </figure>
+
+        </div>
+    </div>
+
+    <!-- PHẦN 2: YOUTUBE -->
+    <div class="section">
+        <h2>Video giới thiệu (YouTube)</h2>
+        <p>Xem video giới thiệu</p>
+
+        <iframe
+            src="https://www.youtube.com/embed/vawjeeXYnnE"
+            title="Video giới thiệu sản phẩm ShopVN"
+            allowfullscreen
+        ></iframe>
+    </div>
+
+    <!-- PHẦN 3: VIDEO LOCAL -->
+    <div class="section">
+        <h2>Video sunset</h2>
+
+        <video
+            controls
+            poster="https://placehold.co/800x400?text=Bam+play+de+xem+video"
+        >
+            <source src="video/sun.mp4"  type="video/mp4">
+            <source src="video/sun.webm" type="video/webm">
+            Trình duyệt không hỗ trợ video.
+        </video>
+    </div>
+
+    <!-- PHẦN 4: AUDIO -->
+    <div class="section">
+        <h2>Nhạc nền giới thiệu</h2>
+        <p>Nghe nhạc khi xem sản phẩm</p>
+        <audio autoplay muted loop>
+            <source src="audio/backmusic.mp3" type="audio/mpeg">
+            Trình duyệt không hỗ trợ audio.
+        </audio>
+    </div>
+
+</body>
+
+</html>

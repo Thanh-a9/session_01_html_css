@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm — ShopTLU</title>
+    <style>
+        body  { font-family: Arial, sans-serif; }
+        thead { background-color: #333; color: white; }
+        tfoot { background-color: #eee; }
+        nav a { color: #0055cc; }
+        h1, h2, h3 { color: #1a1a2e; }
+        mark  { background-color: #fff3cd; color: #c0392b; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ShopTLU</h1>
+    <p>Cửa hàng công nghệ sinh viên — Đại học Thủy Lợi</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Sản phẩm</a></li>
+            <li><a href="profile.html">Giới thiệu</a></li>
+            <li><a href="#lien-he">Liên hệ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+
+<section id="san-pham">
+    <h2>Sản phẩm nổi bật</h2>
+
+    <article>
+        <figure>
+            <img src="screenshots/ip16.png" alt="iPhone 16 Pro" width="300" height="200">
+            <figcaption>iPhone 16 Pro</figcaption>
+        </figure>
+        <h3>iPhone 16 Pro</h3>
+        <p>Chip A18 Pro, camera 48MP, màn hình 6.3 inch Super Retina XDR.</p>
+        <p>Giá: <mark>28.990.000đ</mark></p>
+        <a href="#">Mua ngay</a>
+    </article>
+
+    <hr>
+
+    <article>
+        <figure>
+            <img src="screenshots/sss25.png" alt="Samsung Galaxy S25" width="300" height="200">
+            <figcaption>Samsung Galaxy S25</figcaption>
+        </figure>
+        <h3>Samsung Galaxy S25</h3>
+        <p>Snapdragon 8 Elite, pin 4.000mAh, sạc nhanh 25W.</p>
+        <p>Giá: <mark>22.990.000đ</mark></p>
+        <a href="#">Mua ngay</a>
+    </article>
+
+    <hr>
+
+    <article>
+        <figure>
+            <img src="screenshots/mac.png" alt="MacBook Air M3" width="300" height="200">
+            <figcaption>MacBook Air M3</figcaption>
+        </figure>
+        <h3>MacBook Air M3</h3>
+        <p>Chip Apple M3, RAM 8GB, SSD 256GB, màn hình 13.6 inch Liquid Retina.</p>
+        <p>Giá: <mark>32.990.000đ</mark></p>
+        <a href="#">Mua ngay</a>
+    </article>
+
+    <hr>
+
+    <article>
+        <figure>
+            <img src="screenshots/ipad.png" alt="iPad Pro M4" width="300" height="200">
+            <figcaption>iPad Pro M4</figcaption>
+        </figure>
+        <h3>iPad Pro M4</h3>
+        <p>Chip M4, màn hình OLED 11 inch, hỗ trợ Apple Pencil Pro.</p>
+        <p>Giá: <mark>26.990.000đ</mark></p>
+        <a href="#">Mua ngay</a>
+    </article>
+</section>
+
+<hr>
+
+<section id="so-sanh">
+    <h2>Bảng so sánh Điện thoại</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tiêu chí</th>
+                <th>iPhone 16 Pro</th>
+                <th>Samsung Galaxy S25</th>
+                <th>Xiaomi 14</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><strong>Thông số kỹ thuật</strong></td>
+                <td>Chip A18 Pro</td>
+                <td>Snapdragon 8 Elite</td>
+                <td>Snapdragon 8 Gen 3</td>
+            </tr>
+            <tr>
+                <td>RAM 8GB</td>
+                <td>RAM 12GB</td>
+                <td>RAM 12GB</td>
+            </tr>
+            <tr>
+                <td>Bộ nhớ 256GB</td>
+                <td>Bộ nhớ 256GB</td>
+                <td>Bộ nhớ 256GB</td>
+            </tr>
+            <tr>
+                <td>Màn hình</td>
+                <td>6.3" Super Retina XDR</td>
+                <td>6.2" Dynamic AMOLED</td>
+                <td>6.36" LTPO AMOLED</td>
+            </tr>
+            <tr>
+                <td>Camera chính</td>
+                <td>48MP</td>
+                <td>50MP</td>
+                <td>50MP</td>
+            </tr>
+            <tr>
+                <td>Pin</td>
+                <td>3.582mAh</td>
+                <td>4.000mAh</td>
+                <td>4.610mAh</td>
+            </tr>
+            <tr>
+                <td>Hệ điều hành</td>
+                <td>iOS 18</td>
+                <td>Android 15</td>
+                <td>Android 14</td>
+            </tr>
+            <tr>
+                <td><strong>Giá bán</strong></td>
+                <td><strong>28.990.000đ</strong></td>
+                <td><strong>22.990.000đ</strong></td>
+                <td><strong>18.990.000đ</strong></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    * Giá tham khảo tháng 4/2026. Liên hệ ShopTLU để được tư vấn.
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</section>
+
+</main>
+
+<hr>
+
+<aside id="lien-he">
+    <h2>Liên hệ ShopTLU</h2>
+    <ul>
+        <li><strong>Hotline:</strong> <a href="tel:+84912345678">0912 345 678</a></li>
+        <li><strong>Email:</strong> <a href="mailto:shop@tlu">shop@tlu</a></li>
+        <li><strong>Địa chỉ:</strong> 175 Tây Sơn</li>
+    </ul>
+</aside>
+
+<hr>
+
+<footer>
+    <p>
+        <a href="chinh-sach.html">Chính sách bảo mật</a> |
+        <a href="lien-he.html">Liên hệ</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="doi-tra.html">Chính sách đổi trả</a>
+    </p>
+    <p>&copy; 2026 <strong>ShopTLU</strong>. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
