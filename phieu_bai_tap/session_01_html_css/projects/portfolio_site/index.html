@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+    <script src="js/main.js"></script>
     <header class="header">
         <div class="container header">
             <div class="logo">Nguyen Van Thanh</div>
@@ -147,21 +148,30 @@
             </div>
             <form class="contact-form" id="contactForm">
                 <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Nguyễn Văn A">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="email@example.com">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Nội dung..."></textarea>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Gửi tin nhắn</button>
+                <button type="submit" class="submit-btn">Send Message →</button>
             </form>
         </div>
     </section>
-    <script src="js/main.js"></script>
+    <footer class="footer">
+        <div class="container footer">
+            <p>&copy; 2024 Nguyen Van Thanh. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
