@@ -102,36 +102,113 @@
         </div>
     </section>
     <section class="portfolio-section" id="portfolio">
-        <div class="container portfolio">
+        <div class="container">
             <h2>My Portfolio</h2>
             <div class="portfolio-filters">
                 <button class="filter-button active" data-filter="all">All</button>
                 <button class="filter-button" data-filter="web">Web</button>
                 <button class="filter-button" data-filter="mobile">Mobile</button>
                 <button class="filter-button" data-filter="design">Designs</button>
-            
+            </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="https://picsum.photos/seed/project1/400/300" alt="Project 1">                    
+                    <a href="#lightbox1">
+                        <img src="https://picsum.photos/seed/project1/400/300" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>E-Commerce App</h3>
+                                <p>React + Node.js</p>
+                            </div>
+                        </div>
+                    </a>            
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://picsum.photos/seed/project2/400/300" alt="Project 2">          
+                    <a href="#lightbox2">
+                        <img src="https://picsum.photos/seed/project2/400/300" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Social Media Platform</h3>
+                                <p>Vue + Firebase</p>
+                            </div>
+                        </div>
+                    </a>
+                              
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://picsum.photos/seed/project3/400/300" alt="Project 3">             
+                    <a href="#lightbox3">  
+                        <img src="https://picsum.photos/seed/project3/400/300" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Mobile Game</h3>
+                                <p>Unity + C#</p>
+                            </div>
+                        </div>
+                    </a>
+                                 
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://picsum.photos/seed/project4/400/300" alt="Project 4">         
+                    <a href="#lightbox4">
+                        <img src="https://picsum.photos/seed/project4/400/300" alt="Project 4">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Brand Identity</h3>
+                                <p>Logo + UI Kit</p>
+                            </div>
+                        </div>
+                    </a>
+                             
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://picsum.photos/seed/project5/400/300" alt="Project 5"> 
+                    <a href="#lightbox5">
+                        <img src="https://picsum.photos/seed/project5/400/300" alt="Project 5">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Data Visualization</h3>
+                                <p>D3.js + Python</p>
+                            </div>
+                        </div>
+                    </a>
+                     
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://picsum.photos/seed/project6/400/300" alt="Project 6">                 
+                    <a href="#lightbox6">
+                        <img src="https://picsum.photos/seed/project6/400/300" alt="Project 6">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h3>Personal Blog</h3>
+                                    <p>Gatsby + GraphQL</p>
+                                </div>
+                            </div>
+                    </a>
+                                     
                 </div>
             </div>
         </div>
     </section>
+    <div id="lightbox1" class="lightbox">
+        <img src="https://picsum.photos/seed/project1/900/600" alt="E-Commerce App">
+        <a href="#" class="lightbox-close">&times;</a>
+    </div>
+    <div id="lightbox2" class="lightbox">
+        <img src="https://picsum.photos/seed/project2/900/600" alt="Social Media Platform">
+        <a href="#" class="lightbox-close">&times;</a>
+    </div>
+    <div id="lightbox3" class="lightbox">
+        <img src="https://picsum.photos/seed/project3/900/600" alt="Mobile Game">
+        <a href="#" class="lightbox-close">&times;</a>
+    </div>
+    <div id="lightbox4" class="lightbox">
+        <img src="https://picsum.photos/seed/project4/900/600" alt="Brand Identity">
+        <a href="#" class="lightbox-close">&times;</a>
+    </div>
+    <div id="lightbox5" class="lightbox">
+        <img src="https://picsum.photos/seed/project5/900/600" alt="Data Visualization">
+        <a href="#" class="lightbox-close">&times;</a>
+    </div>
+    <div id="lightbox6" class="lightbox">
+        <img src="https://picsum.photos/seed/project6/900/600" alt="Personal Blog">
+        <a href="#" class="lightbox-close">&times;</a>
+    </div>
     <section class="contact" id="contact">
         <div class="container contact">
             <h2>Get In Touch</h2>
