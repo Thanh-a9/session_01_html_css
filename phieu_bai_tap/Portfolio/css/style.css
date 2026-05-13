@@ -5,9 +5,12 @@ body{
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: #dfdddd;
+    background: #fff;
 }
 nav{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 22px 30px;
     display: flex;
     align-items: center;
@@ -19,7 +22,7 @@ nav{
     gap: 24px;
 }
 .nav-left a,.nav-right a{
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     letter-spacing: 0.03em;
     font-weight: bold;
@@ -27,5 +30,29 @@ nav{
 .nav-title{
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #000000;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.grid-item{
+    overflow: hidden;
+}
+.grid-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.grid-item:hover img{
+    transform: scale(1.1);
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    color: #333;
 }
